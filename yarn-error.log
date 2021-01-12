@@ -1,0 +1,38 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add @umijs/fabric --dev
+
+PATH: 
+  /Users/ivancjz99/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin:/Users/ivancjz99/.cargo/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.18.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: connect ECONNREFUSED 47.241.4.205:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+
+npm manifest: 
+  {
+    "name": "chicken-design",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
