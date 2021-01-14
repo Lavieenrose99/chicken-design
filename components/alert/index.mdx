@@ -4,9 +4,9 @@ route: /Alert
 menu: 组件
 ---
 
-import { Playground } from 'docz'; 
+import  HappyBox  from '../doc';
 import Alert from './alert'; // 引入组件 import './style'; // 引入组件样式
-import WarningAlert from './demo/demo1.tsx'
+import WarningAlert from '!raw-loader!./demo/demo1.tsx';
 
 # Alert 警告提示
 
@@ -16,10 +16,9 @@ import WarningAlert from './demo/demo1.tsx'
 
 ### 基本用法
 
-<Playground>
-  <Alert>这是一条警告提示!!</Alert>
-  <WarningAlert text={'警告提示'}/>
-</Playground>
+<HappyBox code={WarningAlert} title="基本用法" desc="使用kind控制Alert类型">
+<Alert>这是一个基本组件</Alert>
+</HappyBox>
 
 ## API
 

@@ -7,4 +7,4 @@
  * @FilePath: /chicken-design/components/index.ts
  */
 export { default as Alert } from './alert';
-console.log(111);
+

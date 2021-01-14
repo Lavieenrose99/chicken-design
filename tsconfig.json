@@ -1,6 +1,11 @@
 {
     "compilerOptions": {
       "baseUrl": "./",
+      "paths": {
+           "chicken-design/lib": ["components/index.ts"],
+           "chicken-design/esm/*": ["components/*"],
+           "chicken-design/lib/*": ["components/*"]
+          },
       "target": "esnext",
       "module": "commonjs",
       "jsx": "react",
@@ -12,6 +17,6 @@
       "esModuleInterop": true,
       "resolveJsonModule": true
     },
-    "include": ["components", "global.d.ts"],
+    "include": ["components", "global"],
     "exclude": ["node_modules"]
   }

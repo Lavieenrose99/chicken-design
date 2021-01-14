@@ -49,10 +49,20 @@
     }
   },
   "dependencies": {
+    "@types/prismjs": "^1.16.2",
+    "@types/react-copy-to-clipboard": "^5.0.0",
     "docz": "^2.3.1",
     "gatsby-plugin-less": "^4.5.0",
     "less": "^4.1.0",
+    "prismjs": "^1.23.0",
     "prop-types": "^15.7.2",
-    "rimraf": "^3.0.2"
+    "raw-loader": "^4.0.2",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-feather": "^2.0.9",
+    "react-simple-code-editor": "^0.11.0",
+    "react-tooltip": "^4.2.11",
+    "react-use": "^15.3.8",
+    "rimraf": "^3.0.2",
+    "styled-components": "^5.2.1"
   }
 }

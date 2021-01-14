@@ -1,17 +1,13 @@
 import React from 'react';
-import Alert from '../alert';
-import '../style';
+import Alert from 'chicken-design/lib/alert';
+import 'chicken-design/lib/alert/style';
 
-
-interface Text{
+type TextC = {
     text: string
 }
-
-const WarningAlert: React.FC<Text> = (props) => (
-<Alert kind="warning" >{props.text}</Alert>
-);
-
-
-
+ 
+const WarningAlert: React.FC<TextC> = (props)=>{
+ return <Alert kind="warning">{props.text}</Alert>
+}
 
 export default WarningAlert;
