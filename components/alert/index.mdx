@@ -4,7 +4,9 @@ route: /Alert
 menu: 组件
 ---
 
-import { Playground } from 'docz'; import Alert from './alter'; // 引入组件 import './style'; // 引入组件样式
+import { Playground } from 'docz'; 
+import Alert from './alert'; // 引入组件 import './style'; // 引入组件样式
+import WarningAlert from './demo/demo1.tsx'
 
 # Alert 警告提示
 
@@ -15,7 +17,8 @@ import { Playground } from 'docz'; import Alert from './alter'; // 引入组件 
 ### 基本用法
 
 <Playground>
-  <Alert kind="warning">这是一条警告提示</Alert>
+  <Alert>这是一条警告提示!!</Alert>
+  <WarningAlert text={'警告提示'}/>
 </Playground>
 
 ## API
