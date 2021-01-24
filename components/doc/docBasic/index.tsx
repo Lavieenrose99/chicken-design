@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-14 22:27:57
- * @LastEditTime: 2021-01-25 02:17:46
+ * @LastEditTime: 2021-01-25 02:19:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/doc/docBasic/index.tsx
@@ -42,7 +42,7 @@ export const HappyBox: React.FC<Props> = ({ code, title, desc, children }) => {
         </div>
         <div className="divider" />
         <div className="code-box-action">
-          <CopyToClipboard text={code} onCopy={() => alert('终于成功了吧')}>
+          <CopyToClipboard text={code} onCopy={() => alert('终于成功了吧hhhhh')}>
             <IconCopy data-place="top" data-tip="复制代码" />
           </CopyToClipboard>
 
