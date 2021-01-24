@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-01-12 17:22:03
- * @LastEditTime: 2021-01-24 22:14:40
+ * @LastEditTime: 2021-01-24 22:21:57
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/README.md
@@ -14,5 +14,5 @@
 TypeScript+React
 
 ## 在线预览地址 
-s是多少
+s
 http://www.ivannww.com/
