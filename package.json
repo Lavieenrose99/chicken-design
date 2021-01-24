@@ -24,7 +24,7 @@
   "scripts": {
     "dev": "docz dev",
     "start": "npm run dev",
-    "build:doc": "rimraf doc-site && docz build",
+    "build": "rimraf doc-site && docz build",
     "preview:doc": "docz serve",
     "build:types": "tsc -p tsconfig.build.json && cpr lib esm"
   },
