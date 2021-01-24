@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add rimraf --dev
+  /usr/local/bin/node /usr/local/bin/yarn remove @babel/runtime-corejs3
 
 PATH: 
   /Users/ivancjz99/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin:/Users/ivancjz99/.cargo/bin
@@ -14,8 +14,8 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: read ECONNRESET
-      at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
+  Error: https://registry.yarnpkg.com/typescript/-/typescript-4.1.3.tgz: unexpected end of file
+      at Zlib.zlibOnError [as onerror] (zlib.js:180:17)
 
 npm manifest: 
   {
@@ -40,9 +40,13 @@ npm manifest:
         "pre-commit": "lint-staged"
       }
     },
+    "typings": "lib/index.d.ts",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "commit": "git-cz"
+      "dev": "docz dev",
+      "start": "npm run dev",
+      "build:doc": "rimraf doc-site && docz build",
+      "preview:doc": "docz serve",
+      "build:types": "tsc -p tsconfig.build.json && cpr lib esm"
     },
     "keywords": [],
     "author": "",
@@ -52,6 +56,7 @@ npm manifest:
       "@commitlint/config-conventional": "^11.0.0",
       "@types/react": "^17.0.0",
       "@types/react-dom": "^17.0.0",
+      "@types/vfile-message": "^2.0.0",
       "@umijs/fabric": "^2.4.11",
       "commitizen": "^4.2.2",
       "cz-conventional-changelog": "^3.3.0",
@@ -67,8 +72,28 @@ npm manifest:
       }
     },
     "dependencies": {
+      "@babel/core": "^7.12.10",
+      "@babel/plugin-proposal-class-properties": "^7.12.1",
+      "@babel/plugin-transform-runtime": "^7.12.10",
+      "@babel/preset-env": "^7.12.11",
+      "@babel/preset-react": "^7.12.10",
+      "@babel/preset-typescript": "^7.12.7",
+      "@types/prismjs": "^1.16.2",
+      "@types/react-copy-to-clipboard": "^5.0.0",
+      "cpr": "^3.0.1",
       "docz": "^2.3.1",
-      "prop-types": "^15.7.2"
+      "gatsby-plugin-less": "^4.5.0",
+      "less": "^4.1.0",
+      "prismjs": "^1.23.0",
+      "prop-types": "^15.7.2",
+      "raw-loader": "^4.0.2",
+      "react-copy-to-clipboard": "^5.0.3",
+      "react-feather": "^2.0.9",
+      "react-simple-code-editor": "^0.11.0",
+      "react-tooltip": "^4.2.11",
+      "react-use": "^15.3.8",
+      "rimraf": "^3.0.2",
+      "styled-components": "^5.2.1"
     }
   }
 
