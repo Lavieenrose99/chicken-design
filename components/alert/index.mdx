@@ -4,23 +4,23 @@ route: /Alert
 menu: 组件
 ---
 
-import  HappyBox  from '../doc';
-import Alert from './alert'; // 引入组件 import './style'; // 引入组件样式
-import WarningAlert from '!raw-loader!./demo/demo1.tsx';
+import { HappyBox } from '../../doc-comps';
+import BasicDemo from './demo/1-demo-basic';
+import BasicDemoCode from '!raw-loader!./demo/1-demo-basic.tsx';
 
-# Alert 警告提示
+## Alert 警告提示
 
 警告提示，展现需要关注的信息。
 
-## 代码演示
+### 代码演示
 
-### 基本用法
+#### 基本用法
 
-<HappyBox code={WarningAlert} title="基本用法" desc="使用kind控制Alert类型">
-<Alert>这是一个基本组件</Alert>
+<HappyBox code={BasicDemoCode} title="基本用法" desc="使用kind控制Alert类型">
+  <BasicDemo />
 </HappyBox>
 
-## API
+### API
 
 | 属性 | 说明     | 类型                                         | 默认值 |
 | ---- | -------- | -------------------------------------------- | ------ |

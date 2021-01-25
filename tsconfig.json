@@ -1,22 +1,22 @@
 {
-    "compilerOptions": {
-      "baseUrl": "./",
-      "paths": {
-           "chicken-design/lib": ["components/index.ts"],
-           "chicken-design/esm/*": ["components/*"],
-           "chicken-design/lib/*": ["components/*"]
-          },
-      "target": "esnext",
-      "module": "commonjs",
-      "jsx": "react",
-      "declaration": true,
-      "declarationDir": "lib",
-      "strict": true,
-      "moduleResolution": "node",
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "resolveJsonModule": true
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "happy-ui": ["components/index.ts"],
+      "happy-ui/esm/*": ["components/*"],
+      "happy-ui/lib/*": ["components/*"]
     },
-    "include": ["components", "global"],
-    "exclude": ["node_modules"]
-  }
+    "target": "esnext",
+    "module": "commonjs",
+    "jsx": "react",
+    "declaration": true,
+    "declarationDir": "lib",
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "include": ["components", "global.d.ts"],
+  "exclude": ["types", "node_modules", "lib", "esm"]
+}

@@ -1,17 +1,11 @@
 <!--
  * @Author: your name
- * @Date: 2021-01-12 17:22:03
- * @LastEditTime: 2021-01-24 23:55:52
- * @LastEditors: Please set LastEditors
+ * @Date: 2020-06-15 10:39:04
+ * @LastEditTime: 2021-01-25 18:32:08
+ * @LastEditors: your name
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/README.md
 -->
-# chicken-design
-来自一个🥬🐔
-
-## 技术栈
-
-TypeScript+React
-
+# Chicken-design
 ## 在线预览地址 
 http://www.ivannww.com/
