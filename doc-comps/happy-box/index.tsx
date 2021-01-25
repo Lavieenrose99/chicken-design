@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-06-15 10:39:04
+ * @LastEditTime: 2021-01-25 18:48:46
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /chicken-design/doc-comps/happy-box/index.tsx
+ */
 import React from 'react';
 import Editor from 'react-simple-code-editor';
 import CopyToClipboard from 'react-copy-to-clipboard';
@@ -35,7 +43,7 @@ export const HappyBox: React.FC<Props> = ({ code, title, desc, children }) => {
         </div>
         <div className="divider" />
         <div className="code-box-action">
-          <CopyToClipboard text={code} onCopy={() => alert('复制成功')}>
+          <CopyToClipboard text={code} onCopy={() => alert('复制成功111')}>
             <IconCopy data-place="top" data-tip="复制代码" />
           </CopyToClipboard>
 
