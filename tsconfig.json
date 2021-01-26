@@ -2,20 +2,18 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "happy-ui": ["components/index.ts"],
-      "happy-ui/esm/*": ["components/*"],
-      "happy-ui/lib/*": ["components/*"]
+      "chicken-design": ["components/index.ts"],
+      "chicken-design/esm/*": ["components/*"],
+      "chicken-design/lib/*": ["components/*"]
     },
-    "target": "esnext",
-    "module": "commonjs",
-    "jsx": "react",
-    "declaration": true,
-    "declarationDir": "lib",
-    "strict": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true
+    "outDir": "lib", // 打包输出位置
+    "module": "esnext", // 设置生成代码的模块标准，可以设置为 CommonJS、AMD 和 UMD 等等。
+    "target": "es5", // 目标语言的版本
+    "declaration": true, // 生成声明文件，记得 inde.d.ts
+    "jsx": "react", // 等效 React.createElement调用
+    "moduleResolution":"Node", // 模块解析策略，这里提供两种解析策略 node 和 classic，ts 默认使用 node 解析策略。
+    "allowSyntheticDefaultImports": true, // 允许对不包含默认导出的模块使用默认导入。这个选项不会影响生成的代码，只会影响类型检查。
+    "skipLibCheck": true // 跳过类库检查
   },
   "include": ["components", "global.d.ts"],
   "exclude": ["types", "node_modules", "lib", "esm"]
