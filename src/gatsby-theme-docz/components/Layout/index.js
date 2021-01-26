@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-06-15 10:39:04
+ * @LastEditTime: 2021-01-26 18:30:40
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /chicken-design/src/gatsby-theme-docz/components/Layout/index.js
+ */
 /** @jsx jsx */
 import { useRef, useState } from 'react';
 import { useCurrentDoc } from 'docz';

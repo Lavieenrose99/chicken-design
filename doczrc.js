@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-06-15 10:39:04
- * @LastEditTime: 2021-01-25 19:26:16
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-01-26 17:28:32
+ * @LastEditors: your name
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/doczrc.js
  */

@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-06-15 10:39:04
+ * @LastEditTime: 2021-01-26 18:29:47
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /chicken-design/src/gatsby-theme-docz/components/Sidebar/index.js
+ */
 /** @jsx jsx */
 /** @jsxFrag React.Fragment */
 import React, { useState, useRef, useEffect } from 'react';
@@ -33,6 +41,8 @@ export const Sidebar = React.forwardRef((props, ref) => {
         <NavSearch placeholder="Type to search..." value={query} onChange={handleChange} />
         {menus &&
           menus.map(menu => {
+            console.log(menu)
+            // if(menu.name==='介绍') return null
             if (menu.fullpage) return null;
             if (!menu.route) return <NavGroup key={menu.id} item={menu} sidebarRef={ref} />;
             if (menu.route === currentDoc.route) {
