@@ -11,16 +11,22 @@
     font-family: Helvetica;
   }
    */
-  #container {
-    width: 600px;
+  #tool-header-container {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Helvetica;
+
   }
   
-  h1 {
+  #tool-index-header {
     margin: 0;
     letter-spacing: -2px;
   }
   
-  p {
+  #personal-describe{
     font-size: .9rem;
     margin-right: 10px;
     color: #666;
@@ -38,7 +44,7 @@
     }
   }
   
-  span {
+  .tool-index-header-font {
     display: inline-block;
     overflow: hidden;
     position: relative;
@@ -46,7 +52,7 @@
     animation: .3s swift-up ease-in-out forwards;
   }
   
-  i {
+  .tool-index-header-font-i {
     font-style: normal;
     position: relative;
     margin-right: 10px;
@@ -59,51 +65,19 @@
       top: 0rem;
     }
   }
-  
-  span:nth-of-type(1) i {
+  .tool-index-header-font:nth-of-type(1) i {
     animation-delay: 0s;
   }
   
-  span:nth-of-type(2) i {
+  .tool-index-header-font:nth-of-type(2) i {
     animation-delay: .1s;
   }
   
-  span:nth-of-type(3) i {
-    animation-delay: .2s;
-  }
-  
-  span:nth-of-type(4) i {
-    animation-delay: .3s;
-  }
-  
-  span:nth-of-type(5) i {
-    animation-delay: .4s;
-  }
-  
-  span:nth-of-type(6) i {
-    animation-delay: .5s;
-  }
-  
-  span:nth-of-type(1) {
+  .tool-index-header-font:nth-of-type(1) {
     animation-delay: 0s;
   }
   
-  span:nth-of-type(2) {
+  .tool-index-header-font:nth-of-type(2) {
     animation-delay: .1s;
   }
   
-  span:nth-of-type(3) {
-    animation-delay: .2s;
-  }
-  
-  span:nth-of-type(4) {
-    animation-delay: .3s;
-  }
-  
-  span:nth-of-type(5) {
-    animation-delay: .4s;
-  }
-  
-  span:nth-of-type(6) {
-    animation-delay: .5s;
-  }
