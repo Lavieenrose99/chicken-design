@@ -56,7 +56,7 @@
           "name": "/Users/ivancjz99/chicken-design/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
           "options": {
             "sourceMap": true,
-            "autoLabel": true,
+            "autoLabel": false,
             "plugins": [],
             "labelFormat": "[local]",
             "cssPropOptimization": true
@@ -124,7 +124,7 @@
           "name": "/Users/ivancjz99/chicken-design/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
           "options": {
             "sourceMap": true,
-            "autoLabel": true,
+            "autoLabel": false,
             "plugins": [],
             "labelFormat": "[local]",
             "cssPropOptimization": true
@@ -192,7 +192,7 @@
           "name": "/Users/ivancjz99/chicken-design/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
           "options": {
             "sourceMap": true,
-            "autoLabel": true,
+            "autoLabel": false,
             "plugins": [],
             "labelFormat": "[local]",
             "cssPropOptimization": true
@@ -260,7 +260,7 @@
           "name": "/Users/ivancjz99/chicken-design/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
           "options": {
             "sourceMap": true,
-            "autoLabel": true,
+            "autoLabel": false,
             "plugins": [],
             "labelFormat": "[local]",
             "cssPropOptimization": true
