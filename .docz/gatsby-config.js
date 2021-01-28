@@ -68,7 +68,7 @@ const config = {
         title: 'chicken-desgin',
         description: 'A React UI Library.',
         host: 'localhost',
-        port: 59732,
+        port: 64104,
         p: 3000,
         separator: '-',
         paths: {
