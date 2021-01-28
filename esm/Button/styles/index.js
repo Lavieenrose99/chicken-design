@@ -7,4 +7,3 @@
  * @FilePath: /chicken-design/components/Button/style/index.tsx
  */
 // import './index.scss';
-"use strict";
