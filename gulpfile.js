@@ -1,6 +1,8 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
 const less = require('gulp-less');
+const scss = require('gulp-sass');
+var sassGlob = require('gulp-sass-glob');
 const autoprefixer = require('gulp-autoprefixer');
 const cssnano = require('gulp-cssnano');
 const through2 = require('through2');
@@ -12,6 +14,8 @@ const paths = {
     dist: 'dist',
   },
   styles: 'components/**/*.less',
+  style: 'components/**/*.scss',
+  root: 'components/styles/*.scss',
   scripts: [
     'components/**/*.{ts,tsx}',
     '!components/**/demo/*.{ts,tsx}',
@@ -29,7 +33,8 @@ function cssInjection(content) {
   return content
     .replace(/\/style\/?'/g, "/style/css'")
     .replace(/\/style\/?"/g, '/style/css"')
-    .replace(/\.less/g, '.css');
+    .replace(/\.less/g, '.css')
+    .replace(/\.scss/g, '.css')
 }
 
 /**
@@ -88,6 +93,18 @@ function copyLess() {
     .pipe(gulp.dest(paths.dest.lib))
     .pipe(gulp.dest(paths.dest.esm));
 }
+function copyScssRoot() {
+  return gulp
+    .src(paths.root)
+    .pipe(gulp.dest(paths.dest.lib))
+    .pipe(gulp.dest(paths.dest.esm));
+}
+function copyScss() {
+  return gulp
+    .src(paths.style)
+    .pipe(gulp.dest(paths.dest.lib))
+    .pipe(gulp.dest(paths.dest.esm));
+}
 
 /**
  * 生成css文件
@@ -101,8 +118,17 @@ function less2css() {
     .pipe(gulp.dest(paths.dest.lib))
     .pipe(gulp.dest(paths.dest.esm));
 }
+function scss2css() {
+  return gulp
+    .src(paths.style)
+    .pipe(scss()) // 处理less文件
+    .pipe(autoprefixer()) // 根据browserslistrc增加前缀
+    .pipe(cssnano({ zindex: false, reduceIdents: false })) // 压缩
+    .pipe(gulp.dest(paths.dest.lib))
+    .pipe(gulp.dest(paths.dest.esm));
+}
 
-const build = gulp.parallel(buildScripts, copyLess, less2css);
+const build = gulp.parallel(buildScripts,copyScssRoot ,copyLess, less2css,copyScss,scss2css);
 
 exports.build = build;
 

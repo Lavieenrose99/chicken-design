@@ -1,8 +1,17 @@
 import _extends from "@babel/runtime/helpers/esm/extends";
 import _objectWithoutProperties from "@babel/runtime/helpers/esm/objectWithoutProperties";
+
+/*
+ * @Author: your name
+ * @Date: 2020-06-15 10:39:04
+ * @LastEditTime: 2021-01-28 22:24:41
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /chicken-design/components/alert/alert.tsx
+ */
 import React from 'react';
 import t from 'prop-types';
-var prefixCls = 'happy-alert';
+var prefixCls = 'chicken-design';
 var kinds = {
   info: '#5352ED',
   positive: '#2ED573',

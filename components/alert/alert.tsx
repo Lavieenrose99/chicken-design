@@ -1,9 +1,17 @@
+/*
+ * @Author: your name
+ * @Date: 2020-06-15 10:39:04
+ * @LastEditTime: 2021-01-28 22:24:41
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /chicken-design/components/alert/alert.tsx
+ */
 import React from 'react';
 import t from 'prop-types';
 
 import { AlertProps, KindMap } from './interface';
 
-const prefixCls = 'happy-alert';
+const prefixCls = 'chicken-design';
 
 const kinds: KindMap = {
   info: '#5352ED',

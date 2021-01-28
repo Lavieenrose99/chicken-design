@@ -1,0 +1,28 @@
+---
+name: Button 按钮
+route: /docs/button
+menu: 组件
+---
+
+import { HappyBox } from '../../doc-comps';
+import BasicDemo from './demo/button_demo1';
+import BasicDemoCode from '!raw-loader!./demo/button_demo1.tsx';
+
+
+## Button 按钮
+
+按钮 用于处理点击交互
+
+### 代码演示
+
+#### 基本用法
+
+<HappyBox code={BasicDemoCode} title="基本用法">
+  <BasicDemo />
+</HappyBox>
+
+### API
+
+| 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | -------------------------------------------- | ------ |
+| btnType | 按钮类型 | 'info'/'positive'/'negative'/'warning'非必填 | 'info' |
