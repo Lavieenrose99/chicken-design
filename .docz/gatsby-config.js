@@ -19,15 +19,22 @@ const config = {
   pathPrefix: '/',
 
   siteMetadata: {
-    title: 'Chicken Design',
+    title: 'chicken-desgin',
     description: 'A React UI Library.',
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-typescript',
+      options: {
+        isTSX: true,
+        allExtensions: true,
+      },
+    },
+    {
       resolve: 'gatsby-theme-docz',
       options: {
         themeConfig: {},
-        src: './',
+        src: 'components',
         gatsbyRoot: null,
         themesDir: 'src',
         mdxExtensions: ['.md', '.mdx'],
@@ -36,7 +43,7 @@ const config = {
         mdPlugins: [],
         hastPlugins: [],
         ignore: [],
-        typescript: false,
+        typescript: true,
         ts: false,
         propsParser: true,
         'props-parser': true,
@@ -58,10 +65,10 @@ const config = {
         eb: 'master',
         'edit-branch': 'master',
         config: '',
-        title: 'Chicken Design',
+        title: 'chicken-desgin',
         description: 'A React UI Library.',
         host: 'localhost',
-        port: 57017,
+        port: 59732,
         p: 3000,
         separator: '-',
         paths: {
@@ -83,6 +90,7 @@ const config = {
           indexHtml: '/Users/ivancjz99/chicken-design/.docz/app/index.html',
           db: '/Users/ivancjz99/chicken-design/.docz/app/db.json',
         },
+        dist: 'doc-site',
       },
     },
   ],
