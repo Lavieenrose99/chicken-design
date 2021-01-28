@@ -120,6 +120,7 @@
     }
   },
   "dependencies": {
+    "@babel/plugin-syntax-jsx": "^7.12.1",
     "@babel/runtime": "^7.7.7",
     "@types/classnames": "^2.2.11",
     "classnames": "^2.2.6",
