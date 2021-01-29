@@ -1,14 +1,14 @@
 /*
  * @Author: your name
  * @Date: 2021-01-28 17:42:39
- * @LastEditTime: 2021-01-29 03:09:12
+ * @LastEditTime: 2021-01-30 00:58:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Button/demo/button_demo1.tsx
  */
 import React from 'react';
 import Button from 'chicken-design/lib/Button';
-import  'chicken-design/lib/Button/styles/index.scss'
+import '../../../lib/scss/index.css'
 
 
 export default () => <>
