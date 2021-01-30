@@ -50,42 +50,6 @@
       }
     },
     {
-      "key": "components/components/alert/index.mdx",
-      "value": {
-        "name": "Alert 警告提示",
-        "route": "/docs/Alert",
-        "menu": "组件",
-        "id": "d48992703f258255a2b5885686523e13",
-        "filepath": "components/components/alert/index.mdx",
-        "fullpath": "/Users/ivancjz99/chicken-design/components/alert/index.mdx",
-        "link": "",
-        "hidden": false,
-        "slug": "components-components-alert-index",
-        "headings": [
-          {
-            "slug": "alert-警告提示",
-            "depth": 2,
-            "value": "Alert 警告提示"
-          },
-          {
-            "slug": "代码演示",
-            "depth": 3,
-            "value": "代码演示"
-          },
-          {
-            "slug": "基本用法",
-            "depth": 4,
-            "value": "基本用法"
-          },
-          {
-            "slug": "api",
-            "depth": 3,
-            "value": "API"
-          }
-        ]
-      }
-    },
-    {
       "key": "components/components/a_first/index.mdx",
       "value": {
         "name": "Hello",
@@ -125,6 +89,42 @@
           }
         ]
       }
+    },
+    {
+      "key": "components/components/alert/index.mdx",
+      "value": {
+        "name": "Alert 警告提示",
+        "route": "/docs/Alert",
+        "menu": "组件",
+        "id": "d48992703f258255a2b5885686523e13",
+        "filepath": "components/components/alert/index.mdx",
+        "fullpath": "/Users/ivancjz99/chicken-design/components/alert/index.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "components-components-alert-index",
+        "headings": [
+          {
+            "slug": "alert-警告提示",
+            "depth": 2,
+            "value": "Alert 警告提示"
+          },
+          {
+            "slug": "代码演示",
+            "depth": 3,
+            "value": "代码演示"
+          },
+          {
+            "slug": "基本用法",
+            "depth": 4,
+            "value": "基本用法"
+          },
+          {
+            "slug": "api",
+            "depth": 3,
+            "value": "API"
+          }
+        ]
+      }
     }
   ],
   "props": [
@@ -145,6 +145,15 @@
               "required": false,
               "type": {
                 "name": "\"info\" | \"positive\" | \"negative\" | \"warning\""
+              }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": false,
+              "type": {
+                "name": "string"
               }
             }
           }
@@ -7598,6 +7607,15 @@
               "type": {
                 "name": "\"info\" | \"positive\" | \"negative\" | \"warning\""
               }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": false,
+              "type": {
+                "name": "string"
+              }
             }
           }
         }
@@ -7621,6 +7639,15 @@
               "type": {
                 "name": "\"info\" | \"positive\" | \"negative\" | \"warning\""
               }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": false,
+              "type": {
+                "name": "string"
+              }
             }
           }
         }
@@ -7636,10 +7663,6 @@
     },
     {
       "key": "components/alert/demo/1-demo-basic.tsx",
-      "value": []
-    },
-    {
-      "key": "components/alert/style/index.ts",
       "value": []
     },
     {

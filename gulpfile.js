@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
-const less = require('gulp-less');
 const scss = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cssnano = require('gulp-cssnano');
@@ -12,7 +11,6 @@ const paths = {
     esm: 'esm',
     dist: 'dist',
   },
-  styles: 'components/**/*.less',
   style: 'components/**/*.scss',
   root: 'components/styles/*.scss',
   scripts: [
@@ -84,14 +82,9 @@ function compileESM() {
 const buildScripts = gulp.series(compileCJS, compileESM);
 
 /**
- * 拷贝less文件
+ * 拷贝scss文件
  */
-function copyLess() {
-  return gulp
-    .src(paths.styles)
-    .pipe(gulp.dest(paths.dest.lib))
-    .pipe(gulp.dest(paths.dest.esm));
-}
+
 function copyScssRoot() {
   return gulp
     .src(paths.root)
@@ -108,15 +101,6 @@ function copyScss() {
 /**
  * 生成css文件
  */
-function less2css() {
-  return gulp
-    .src(paths.styles)
-    .pipe(less()) // 处理less文件
-    .pipe(autoprefixer()) // 根据browserslistrc增加前缀
-    .pipe(cssnano({ zindex: false, reduceIdents: false })) // 压缩
-    .pipe(gulp.dest(paths.dest.lib))
-    .pipe(gulp.dest(paths.dest.esm));
-}
 function scss2css() {
   return gulp
     .src(paths.style)
@@ -127,7 +111,7 @@ function scss2css() {
     .pipe(gulp.dest(paths.dest.esm));
 }
 
-const build = gulp.parallel(buildScripts,copyScssRoot ,copyLess, less2css,copyScss,scss2css);
+const build = gulp.parallel(buildScripts,copyScssRoot ,copyScss,scss2css);
 
 exports.build = build;
 

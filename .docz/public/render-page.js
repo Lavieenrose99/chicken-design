@@ -233,13 +233,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var chicken_design_lib_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! chicken-design/lib/Button */ "../components/Button/index.tsx");
-/* harmony import */ var _lib_scss_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../lib/scss/index.css */ "../lib/scss/index.css");
-/* harmony import */ var _lib_scss_index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_lib_scss_index_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _lib_Button_styles_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../lib/Button/styles/index.css */ "../lib/Button/styles/index.css");
+/* harmony import */ var _lib_Button_styles_index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_lib_Button_styles_index_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/core */ "../node_modules/@emotion/core/dist/core.esm.js");
 /*
  * @Author: your name
  * @Date: 2021-01-28 17:42:39
- * @LastEditTime: 2021-01-30 00:58:08
+ * @LastEditTime: 2021-01-31 01:05:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Button/demo/button_demo1.tsx
@@ -354,11 +354,12 @@ if (typeof FirstPage !== 'undefined' && FirstPage && FirstPage === Object(FirstP
 /*!*************************************!*\
   !*** ../components/alert/alert.tsx ***!
   \*************************************/
-/*! exports provided: default */
+/*! exports provided: AlertClassName, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlertClassName", function() { return AlertClassName; });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "../node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
@@ -372,15 +373,29 @@ __webpack_require__.r(__webpack_exports__);
 /*
  * @Author: your name
  * @Date: 2020-06-15 10:39:04
- * @LastEditTime: 2021-01-28 22:24:41
- * @LastEditors: your name
+ * @LastEditTime: 2021-01-31 01:09:26
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/alert/alert.tsx
  */
 
 
 
-var prefixCls = 'chicken-design';
+var prefixCls = 'chicken-design-alert';
+var AlertClassName = {
+  title: prefixCls + "-title"
+};
+
+if (typeof AlertClassName !== 'undefined' && AlertClassName && AlertClassName === Object(AlertClassName) && Object.isExtensible(AlertClassName) && !AlertClassName.hasOwnProperty('__filemeta')) {
+  Object.defineProperty(AlertClassName, '__filemeta', {
+    configurable: true,
+    value: {
+      name: "AlertClassName",
+      filename: "components/alert/alert.tsx"
+    }
+  });
+}
+
 var kinds = {
   info: '#5352ED',
   positive: '#2ED573',
@@ -390,16 +405,19 @@ var kinds = {
 
 var Alert = function Alert(_ref) {
   var children = _ref.children,
+      title = _ref.title,
       _ref$kind = _ref.kind,
       kind = _ref$kind === void 0 ? 'info' : _ref$kind,
-      rest = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["children", "kind"]);
+      rest = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["children", "title", "kind"]);
 
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
     className: prefixCls,
     style: {
       background: kinds[kind]
     }
-  }, rest), children);
+  }, rest), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("h4", {
+    className: AlertClassName.title
+  }, title), children);
 };
 
 Alert.propTypes = {
@@ -431,12 +449,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var chicken_design_lib_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! chicken-design/lib/alert */ "../components/alert/index.ts");
-/* harmony import */ var chicken_design_lib_alert_style_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! chicken-design/lib/alert/style/index */ "../components/alert/style/index.ts");
+/* harmony import */ var _lib_alert_styles_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../lib/alert/styles/index.css */ "../lib/alert/styles/index.css");
+/* harmony import */ var _lib_alert_styles_index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_lib_alert_styles_index_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/core */ "../node_modules/@emotion/core/dist/core.esm.js");
 /*
  * @Author: your name
  * @Date: 2020-06-15 10:39:04
- * @LastEditTime: 2021-01-30 00:55:48
+ * @LastEditTime: 2021-01-31 01:04:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/alert/demo/1-demo-basic.tsx
@@ -447,7 +466,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_3__["jsx"])(chicken_design_lib_alert__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    kind: "warning"
+    kind: "warning",
+    title: "Warning Tips"
   }, "\u8FD9\u662F\u4E00\u6761\u8B66\u544A\u63D0\u793A");
 });
 
@@ -490,6 +510,14 @@ if (typeof _alert__WEBPACK_IMPORTED_MODULE_0__["default"] !== 'undefined' && _al
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+/*
+ * @Author: your name
+ * @Date: 2020-06-15 10:39:04
+ * @LastEditTime: 2021-01-31 00:37:53
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /chicken-design/components/alert/interface.ts
+ */
 if (typeof Kind !== 'undefined' && Kind && Kind === Object(Kind) && Object.isExtensible(Kind) && !Kind.hasOwnProperty('__filemeta')) {
   Object.defineProperty(Kind, '__filemeta', {
     configurable: true,
@@ -519,32 +547,6 @@ if (typeof AlertProps !== 'undefined' && AlertProps && AlertProps === Object(Ale
     }
   });
 }
-
-/***/ }),
-
-/***/ "../components/alert/style/index.less":
-/*!********************************************!*\
-  !*** ../components/alert/style/index.less ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "../components/alert/style/index.ts":
-/*!******************************************!*\
-  !*** ../components/alert/style/index.ts ***!
-  \******************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.less */ "../components/alert/style/index.less");
-/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_0__);
-
 
 /***/ }),
 
@@ -754,10 +756,21 @@ if (typeof _happy_box__WEBPACK_IMPORTED_MODULE_0__["default"] !== 'undefined' &&
 
 /***/ }),
 
-/***/ "../lib/scss/index.css":
-/*!*****************************!*\
-  !*** ../lib/scss/index.css ***!
-  \*****************************/
+/***/ "../lib/Button/styles/index.css":
+/*!**************************************!*\
+  !*** ../lib/Button/styles/index.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "../lib/alert/styles/index.css":
+/*!*************************************!*\
+  !*** ../lib/alert/styles/index.css ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8565,7 +8578,7 @@ module.exports = ReactPropTypesSecret;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("/*\n * @Author: your name\n * @Date: 2021-01-28 17:42:39\n * @LastEditTime: 2021-01-30 00:58:08\n * @LastEditors: Please set LastEditors\n * @Description: In User Settings Edit\n * @FilePath: /chicken-design/components/Button/demo/button_demo1.tsx\n */\nimport React from 'react';\nimport Button from 'chicken-design/lib/Button';\nimport '../../../lib/scss/index.css'\n\n\nexport default () => <>\n<Button disabled btnType=\"danger\">危险按钮</Button> \n<Button btnType=\"primary\">基本按钮</Button>\n<Button btnType=\"default\">默认按钮</Button>\n<Button disabled btnType=\"link\">终于按钮</Button> </>;");
+/* harmony default export */ __webpack_exports__["default"] = ("/*\n * @Author: your name\n * @Date: 2021-01-28 17:42:39\n * @LastEditTime: 2021-01-31 01:05:59\n * @LastEditors: Please set LastEditors\n * @Description: In User Settings Edit\n * @FilePath: /chicken-design/components/Button/demo/button_demo1.tsx\n */\nimport React from 'react';\nimport Button from 'chicken-design/lib/Button';\nimport '../../../lib/Button/styles/index.css'\n\n\nexport default () => <>\n<Button disabled btnType=\"danger\">危险按钮</Button> \n<Button btnType=\"primary\">基本按钮</Button>\n<Button btnType=\"default\">默认按钮</Button>\n<Button disabled btnType=\"link\">终于按钮</Button> </>;");
 
 /***/ }),
 
@@ -8578,7 +8591,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("/*\n * @Author: your name\n * @Date: 2020-06-15 10:39:04\n * @LastEditTime: 2021-01-30 00:55:48\n * @LastEditors: Please set LastEditors\n * @Description: In User Settings Edit\n * @FilePath: /chicken-design/components/alert/demo/1-demo-basic.tsx\n */\n\nimport React from 'react';\nimport Alert from 'chicken-design/lib/alert';\nimport 'chicken-design/lib/alert/style/index';\n\n\nexport default () => <Alert kind=\"warning\">这是一条警告提示</Alert>;\n");
+/* harmony default export */ __webpack_exports__["default"] = ("/*\n * @Author: your name\n * @Date: 2020-06-15 10:39:04\n * @LastEditTime: 2021-01-31 01:04:44\n * @LastEditors: Please set LastEditors\n * @Description: In User Settings Edit\n * @FilePath: /chicken-design/components/alert/demo/1-demo-basic.tsx\n */\n\nimport React from 'react';\nimport Alert from 'chicken-design/lib/alert';\nimport '../../../lib/alert/styles/index.css'\n\n\nexport default () => <Alert kind=\"warning\" title=\"Warning Tips\" >这是一条警告提示</Alert>;\n");
 
 /***/ }),
 

@@ -1,0 +1,12 @@
+@import "../../styles/index";
+
+.chicken-design-alert{
+    padding: 20px;
+    color: white;
+    background: white;
+    border-radius: 3px;
+  }
+.chicken-design-alert-title{
+    color: $black;
+    font-size: $h4-font-size;
+}
