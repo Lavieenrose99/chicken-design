@@ -8,4 +8,5 @@ export interface AlertProps {
     kind?: 'success' | 'info' | 'positive' | 'negative' | 'warning';
     className?: string;
     title?: string;
+    closeable?: boolean;
 }

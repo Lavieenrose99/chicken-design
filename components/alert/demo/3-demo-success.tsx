@@ -5,4 +5,4 @@ import Alert from 'chicken-design/lib/alert';
 import '../styles/index.scss'
 
 
-export default () => <Alert kind="success" title="Success Tips" >成功完成任务</Alert>;
+export default () => <Alert kind="success" title="Success Tips" closeable >成功完成任务</Alert>;

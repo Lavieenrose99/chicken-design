@@ -1,6 +1,6 @@
 {
   "name": "chicken-design",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "A React UI Library.",
   "homepage": "http://www.ivannww.com/",
   "typings": "lib/index.d.ts",
@@ -119,6 +119,7 @@
     }
   },
   "dependencies": {
+    "@ant-design/icons": "^4.4.0",
     "@babel/plugin-syntax-jsx": "^7.12.1",
     "@babel/runtime": "^7.7.7",
     "@types/classnames": "^2.2.11",

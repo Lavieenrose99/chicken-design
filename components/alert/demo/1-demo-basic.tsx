@@ -13,4 +13,4 @@ import Alert from 'chicken-design/lib/alert';
 import '../styles/index.scss'
 
 
-export default () => <Alert kind="warning" title="Warning Tips" >这是一条警告提示</Alert>;
+export default () => <Alert kind="warning" title="Warning Tips" closeable >这是一条警告提示</Alert>;

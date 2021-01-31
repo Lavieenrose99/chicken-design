@@ -24,6 +24,16 @@
 .alert-info{
   background-color: $cyan;
 }
+.closeable{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: .6s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+}
 .chicken-design-alert-title{
     font-family: $font-family-sans-serif;
     line-height: $line-height-lg;
@@ -31,4 +41,5 @@
     display: block;
     font-weight: $font-weight-normal;
     font-size: $h4-font-size;
-}
+} 
+

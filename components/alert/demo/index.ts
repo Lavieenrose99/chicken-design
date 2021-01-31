@@ -1,8 +1,8 @@
 /*
  * @Author: your name
- * @Date: 2021-01-31 16:48:25
- * @LastEditTime: 2021-01-31 17:33:54
- * @LastEditors: Please set LastEditors
+ * @Date: 2021-01-31 17:13:16
+ * @LastEditTime: 2021-01-31 23:27:30
+ * @LastEditors: your name
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/alert/demo/index.ts
  */
