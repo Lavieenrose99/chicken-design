@@ -12,7 +12,8 @@ const paths = {
     dist: 'dist',
   },
   style: 'components/**/*.scss',
-  root: 'components/styles/*.scss',
+  root: 'styles/*.scss',
+  copyroot: 'components/styles',
   scripts: [
     'components/**/*.{ts,tsx}',
     '!components/**/demo/*.{ts,tsx}',
@@ -89,6 +90,7 @@ function copyScssRoot() {
   return gulp
     .src(paths.root)
     .pipe(gulp.dest(paths.dest.lib))
+    .pipe(gulp.dest(paths.copyroot))
     .pipe(gulp.dest(paths.dest.esm));
 }
 function copyScss() {
@@ -110,9 +112,19 @@ function scss2css() {
     .pipe(gulp.dest(paths.dest.lib))
     .pipe(gulp.dest(paths.dest.esm));
 }
+gulp.task("watch-copy-scss",function(){
+  return gulp
+  .src(paths.style)
+  .pipe(gulp.dest(paths.dest.lib))
+  .pipe(gulp.dest(paths.dest.esm));
+})
+const watch = gulp.task("watch",function(){
+  gulp.watch(paths.style,gulp.parallel(copyScss,scss2css))
+})
 
 const build = gulp.parallel(buildScripts,copyScssRoot ,copyScss,scss2css);
 
 exports.build = build;
+exports.watch = watch;
 
-exports.default = build;
+// exports.default = build;

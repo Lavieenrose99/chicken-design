@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-28 17:42:39
- * @LastEditTime: 2021-01-31 01:05:59
+ * @LastEditTime: 2021-01-31 15:11:19
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Button/demo/button_demo1.tsx
@@ -15,4 +15,4 @@ export default () => <>
 <Button disabled btnType="danger">危险按钮</Button> 
 <Button btnType="primary">基本按钮</Button>
 <Button btnType="default">默认按钮</Button>
-<Button disabled btnType="link">终于按钮</Button> </>;
+<Button disabled btnType="link" size="lg" >终于按钮</Button> </>;

@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2021-01-28 17:34:47
- * @LastEditTime: 2021-01-28 17:38:18
- * @LastEditors: your name
+ * @LastEditTime: 2021-01-31 11:05:27
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Button/button.tsx
  */
@@ -29,10 +29,6 @@ export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 /**
  * 页面中最常用的的按钮元素，适合于完成特定的交互
  * ### 引用方法
- *
- * ~~~js
- * import { Button } from 'vikingship'
- * ~~~
  */
 export const Button: FC<ButtonProps> = props => {
   const {
@@ -66,6 +62,7 @@ export const Button: FC<ButtonProps> = props => {
         className={classes}
         disabled={disabled}
         {...restProps}
+        type="button"
       >
         {children}
       </button>

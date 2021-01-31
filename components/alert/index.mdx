@@ -5,8 +5,12 @@ menu: 组件
 ---
 
 import { HappyBox } from '../../doc-comps';
-import BasicDemo from './demo/1-demo-basic';
-import BasicDemoCode from '!raw-loader!./demo/1-demo-basic.tsx';
+import { BasicDemo, InfoDemo, SuccessDemo, PoDemo, NeDome} from './demo/index';
+import BasicDemoCode from '!raw-loader!./demo/1-demo-basic'
+import InfoDemoCode from '!raw-loader!./demo/2-demo-info'
+import SuccessDemoCode from '!raw-loader!./demo/3-demo-success'
+import PoDemoCode from '!raw-loader!./demo/4-demo-po'
+import NeDomeCode from '!raw-loader!./demo/5-demo-ne'
 
 ## Alert 警告提示
 
@@ -16,14 +20,33 @@ import BasicDemoCode from '!raw-loader!./demo/1-demo-basic.tsx';
 
 #### 基本用法
 
+<HappyBox code={SuccessDemoCode} title="基本用法" desc="使用kind控制Alert类型">
+  <SuccessDemo />
+</HappyBox>
+
+<HappyBox code={InfoDemoCode} title="基本用法" desc="使用kind控制Alert类型">
+  <InfoDemo />
+</HappyBox>
+
 <HappyBox code={BasicDemoCode} title="基本用法" desc="使用kind控制Alert类型">
   <BasicDemo />
 </HappyBox>
+
+<HappyBox code={PoDemoCode} title="基本用法" desc="使用kind控制Alert类型">
+  <PoDemo />
+</HappyBox>
+
+<HappyBox code={NeDomeCode} title="基本用法" desc="使用kind控制Alert类型">
+  <NeDome />
+</HappyBox>
+
+
+
 
 ### API
 
 | 属性 | 说明     | 类型                                         | 默认值 |
 | ---- | -------- | -------------------------------------------- | ------ |
-| kind | 警告类型 | 'info'/'positive'/'negative'/'warning'非必填 | 'info' |
+| kind | 警告类型 | 'success'/'info'/'positive'/'negative'/'warning'非必填 | 'sucess' |
 
 
