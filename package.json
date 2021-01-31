@@ -19,7 +19,7 @@
     "build:types": "tsc -p tsconfig.build.json",
     "build-css": "node-less ./components ./lib/index.css",
     "build-scss": "node-sass ./components/**/styles -o ./lib/scss",
-    "build": "cnpm && docz build",
+    "build": "cnpm i && docz build",
     "publish:doc": "now --prod",
     "now-build": "npm run build:doc",
     "release": "ts-node ./scripts/release.ts",
