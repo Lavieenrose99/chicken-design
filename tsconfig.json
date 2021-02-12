@@ -6,6 +6,13 @@
       "chicken-design/esm/*": ["components/*"],
       "chicken-design/lib/*": ["components/*"]
     },
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
     "outDir": "lib", // 打包输出位置
     "module": "esnext", // 设置生成代码的模块标准，可以设置为 CommonJS、AMD 和 UMD 等等。
     "target": "es5", // 目标语言的版本
@@ -15,6 +22,12 @@
     "allowSyntheticDefaultImports": true, // 允许对不包含默认导出的模块使用默认导入。这个选项不会影响生成的代码，只会影响类型检查。
     "skipLibCheck": true // 跳过类库检查
   },
+  "target": "es5",
+  "lib": [
+    "dom",
+    "dom.iterable",
+    "esnext"
+  ],
   "include": ["components", "global.d.ts"],
   "exclude": ["types", "node_modules", "lib", "esm"]
 }
