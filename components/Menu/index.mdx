@@ -1,5 +1,5 @@
 ---
-name: Menu 按钮
+name: Menu 菜单
 route: /docs/menu
 menu: 组件
 ---
@@ -7,26 +7,47 @@ menu: 组件
 import { HappyBox } from '../../doc-comps';
 import BasicDemo from './demo/menu-demo-1';
 import BasicDemoCode from '!raw-loader!./demo/menu-demo-1.tsx';
+import BasicDemo2 from './demo/menu-demo-2';
+import BasicDemoCode2 from '!raw-loader!./demo/menu-demo-2.tsx';
 
 
-## Button 按钮
+## Button 菜单
 
-按钮 用于处理点击交互
+菜单 用于分类处理
 
 ### 代码演示
 
 #### 基本用法
 
-<HappyBox code={BasicDemoCode} title="基本用法">
+<HappyBox code={BasicDemoCode} title="默认">
   <BasicDemo />
+</HappyBox>
+<HappyBox code={BasicDemoCode2} title="纵向菜单">
+  <BasicDemo2 />
 </HappyBox>
 
 ### API
 
+#### Menu
 | 属性 | 说明     | 类型                                         | 默认值 |
 | ---- | -------- | -------------------------------------------- | ------ |
-| btnType | 按钮类型 | 'info'/'positive'/'negative'/'warning'非必填 | 'info' |
+| defaultIndex | 默认active的索引 | number | 0 |
 | className | 组件类名 |   string   |   - |
-| size  | 大小 | 'sm' 'lg' | - | 
-| disabled | 是否禁用 |boolean | false |
-| href | 链接 | srting | - |   
+| mode  | 菜单类型横项或者纵向 | oneOf "horizontal" | "vertical" | horizonta | 
+| onSelect | 	点击菜单项触发的回掉函数 | function | false |
+| defaultOpenSubMenus | 	设置子菜单的默认打开 只在纵向模式下生效 | string[默认打开的索引数组] | - |   
+
+
+#### MenuItem
+| 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | -------------------------------------------- | ------ |
+| disabled| 选项是否被禁用 | boolean | false |
+| className | 组件类名 |   string   |   - |
+| style | css |  |  | 
+
+#### SubMenu
+| 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | -------------------------------------------- | ------ |
+| title | 名称 | string | - |
+| className | 组件类名 |   string   |   - |
+| style | css |  |  | 

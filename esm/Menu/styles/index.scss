@@ -1,6 +1,6 @@
 @import "../../styles/index";
 
-.viking-menu {
+.chicken-design-menu {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -51,7 +51,7 @@
       transform: rotate(180deg) !important;
     }
   }
-  .viking-submenu {
+  .chicken-design-submenu {
     //display: none;
     list-style:none;
     padding-left: 0;
@@ -67,7 +67,7 @@
       }
     }
   }
-  .viking-submenu.menu-opened {
+  .chicken-design-submenu.menu-opened {
     //display: block;
   }
 }
@@ -75,7 +75,7 @@
   >.menu-item {
     border-bottom: $menu-item-active-border-width solid transparent;
   }
-  .viking-submenu {
+  .chicken-design-submenu {
     position: absolute;
     background: $white;
     z-index: 100;

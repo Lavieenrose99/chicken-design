@@ -15,26 +15,34 @@ style={{
 </h3>
 <Menu
   defaultIndex="0"
-  defaultOpenSubMenus={[]}
-  mode="horizontal"
+  defaultOpenSubMenus={[
+    '2','3'
+  ]}
+  mode="vertical"
   onSelect={function noRefCheck(){}}
 >
-  <MenuItem index="2">
-    C++
+  <MenuItem>
+    JS
   </MenuItem>
   <MenuItem>
-    Java
+    TS
   </MenuItem>
-  <MenuItem disabled >
-    disabled
-  </MenuItem>
-  <SubMenu title="下拉选项">
+  <SubMenu title="默认展开下拉选项">
     <MenuItem>
-      node.js
+      二叉树
     </MenuItem>
     <MenuItem>
-      deno.js
+      平衡二叉树
     </MenuItem>
-  </SubMenu>
+    </SubMenu>
+    <SubMenu title="默认展开下拉选项">
+    <MenuItem>
+      红黑树
+    </MenuItem>
+    <MenuItem>
+      二叉搜索树
+    </MenuItem>
+    </SubMenu>
+  
 </Menu>
 </div>

@@ -54,7 +54,7 @@ var SubMenu = function SubMenu(_ref) {
   } : {};
 
   var renderChildren = function renderChildren() {
-    var subMenuClasses = classNames('viking-submenu', {
+    var subMenuClasses = classNames('chicken-design-submenu', {
       'menu-opened': menuOpen
     });
     var childrenComponent = React.Children.map(children, function (child, i) {

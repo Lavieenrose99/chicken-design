@@ -11,7 +11,7 @@ var Icon = function Icon(props) {
       theme = props.theme,
       restProps = _objectWithoutProperties(props, ["className", "theme"]);
 
-  var classes = classNames('viking-icon', className, _defineProperty({}, "icon-".concat(theme), theme));
+  var classes = classNames('chicken-design-icon', className, _defineProperty({}, "icon-".concat(theme), theme));
   return /*#__PURE__*/React.createElement(FontAwesomeIcon, _extends({
     className: classes
   }, restProps));

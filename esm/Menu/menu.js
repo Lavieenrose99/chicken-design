@@ -7,7 +7,7 @@ export var MenuContext = /*#__PURE__*/createContext({
 /**
  * 为网站提供导航功能的菜单。支持横向纵向两种模式，支持下拉菜单。
  * ~~~js
- * import { Menu } from 'vikingship'
+ * import { Menu } from 'chicken-designship'
  * ~~~
  */
 
@@ -25,7 +25,7 @@ export var Menu = function Menu(props) {
       currentActive = _useState2[0],
       setActive = _useState2[1];
 
-  var classes = classNames('viking-menu', className, {
+  var classes = classNames('chicken-design-menu', className, {
     'menu-vertical': mode === 'vertical',
     'menu-horizontal': mode !== 'vertical'
   });
