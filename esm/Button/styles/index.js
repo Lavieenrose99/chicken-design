@@ -6,4 +6,4 @@
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Button/style/index.tsx
  */
-import './index.scss';
+import './index.css';

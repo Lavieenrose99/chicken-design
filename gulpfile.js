@@ -53,7 +53,7 @@ function compileScripts(babelEnv, destDir) {
         if (file.path.match(/(\/|\\)styles(\/|\\)index\.js/)) {
           const content = file.contents.toString(encoding);
           file.contents = Buffer.from(cssInjection(content)); // 处理文件内容
-          file.path = file.path.replace(/index\.js/, 'css.js'); // 文件重命名
+          file.path = file.path.replace(/index\.js/, 'index.js'); // 文件重命名
           this.push(file); // 新增该文件
           next();
         } else {
