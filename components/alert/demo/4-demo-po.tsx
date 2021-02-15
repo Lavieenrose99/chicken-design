@@ -8,8 +8,6 @@
  */
 import React from 'react';
 import Alert from 'chicken-design/lib/alert';
-// import '../../../lib/alert/styles/index.css'
-import '../styles/index.scss'
-
+import '../../../lib/alert/styles'
 
 export default () => <Alert kind="positive" title="positive" >用于庆祝的场景</Alert>;

@@ -1,8 +1,16 @@
+/*
+ * @Author: your name
+ * @Date: 2021-02-03 00:41:25
+ * @LastEditTime: 2021-02-15 18:36:09
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /chicken-design/components/Menu/demo/menu-demo-1.tsx
+ */
 import Menu from '../index'
-import '../styles/index.scss'
 import React from 'react'
 import MenuItem from '../menuItem'
 import SubMenu from '../subMenu'
+import '../../../lib/Menu/styles'
 
 export default ()=><div
 style={{

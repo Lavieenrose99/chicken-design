@@ -1,5 +1,4 @@
 import Menu from '../index'
-import '../styles/index.scss'
 import React from 'react'
 import MenuItem from '../menuItem'
 import SubMenu from '../subMenu'
