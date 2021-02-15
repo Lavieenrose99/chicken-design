@@ -50,7 +50,7 @@ function compileScripts(babelEnv, destDir) {
       through2.obj(function z(file, encoding, next) {
         this.push(file.clone());
         // 找到目标
-        if (file.path.match(/(\/|\\)style(\/|\\)index\.js/)) {
+        if (file.path.match(/(\/|\\)styles(\/|\\)index\.js/)) {
           const content = file.contents.toString(encoding);
           file.contents = Buffer.from(cssInjection(content)); // 处理文件内容
           file.path = file.path.replace(/index\.js/, 'css.js'); // 文件重命名

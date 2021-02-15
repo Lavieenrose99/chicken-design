@@ -8,7 +8,7 @@
  */
 import React from 'react';
 import Alert from 'chicken-design/lib/alert';
-import 'chicken-design/alert/styles/index.css'
+import 'chicken-design/lib/alert/styles'
 
 
 
