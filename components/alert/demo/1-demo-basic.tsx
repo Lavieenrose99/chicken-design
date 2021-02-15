@@ -1,15 +1,14 @@
 /*
  * @Author: your name
- * @Date: 2020-06-15 10:39:04
- * @LastEditTime: 2021-02-15 18:36:40
- * @LastEditors: Please set LastEditors
+ * @Date: 2021-01-31 17:13:16
+ * @LastEditTime: 2021-02-15 22:14:19
+ * @LastEditors: your name
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/alert/demo/1-demo-basic.tsx
  */
-
 import React from 'react';
 import Alert from 'chicken-design/lib/alert';
-import '../../../lib/alert/styles'
+import 'chicken-design/alert/styles/index.css'
 
 
 

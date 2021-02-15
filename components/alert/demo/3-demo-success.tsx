@@ -9,7 +9,7 @@
 
 import React from 'react';
 import Alert from 'chicken-design/lib/alert';
-import '../../../lib/alert/styles'
+import 'chicken-design/alert/styles/index.css'
 
 
 export default () => <Alert kind="success" title="Success Tips" closeable >成功完成任务</Alert>;

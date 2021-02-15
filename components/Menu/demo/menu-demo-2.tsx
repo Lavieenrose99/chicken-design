@@ -1,7 +1,8 @@
-import Menu from '../index'
-import React from 'react'
-import MenuItem from '../menuItem'
-import SubMenu from '../subMenu'
+import React from 'react';
+import SubMenu from 'chicken-design/lib/Menu/subMenu';
+import Menu from 'chicken-design/lib/Menu/menu';
+import MenuItem from 'chicken-design/lib/Menu/menuItem';
+import 'chicken-design/Menu/styles/index.css';
 
 export default ()=><div
 style={{

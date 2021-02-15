@@ -8,7 +8,7 @@
  */
 import React from 'react';
 import Alert from 'chicken-design/lib/alert';
-import '../../../lib/alert/styles'
+import 'chicken-design/alert/styles/index.css'
 
 
 export default () => <Alert kind="negative" title="ERROR" >出现了一些错误</Alert>;
