@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-15 10:39:04
- * @LastEditTime: 2021-01-31 23:25:19
+ * @LastEditTime: 2021-02-15 17:43:55
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/alert/alert.tsx
@@ -9,8 +9,8 @@
 import React, { useState } from 'react';
 import t from 'prop-types';
 import classNames from 'classnames';
-import { IconFont } from '../src/iconfont';
 import { AlertProps } from './interface';
+import Icon from '../Icon'
 
 
 const prefixCls = 'chicken-design-alert';
@@ -33,7 +33,7 @@ const Alert: React.FC<AlertProps> = ({ children,
     {...rest}
   >
     <span className={AlertClassName.title}>{title}<span style={{ float: 'right' }}
-    onClick={() => setClose(true)} ><IconFont type="icon-close" /></span></span>
+    onClick={() => setClose(true)} ><Icon icon="window-close" className="close-icons" size="sm" /></span></span>
     {children}
   </div> : <div className={classes} {...rest}>
     <span className={AlertClassName.title}>{title}</span>

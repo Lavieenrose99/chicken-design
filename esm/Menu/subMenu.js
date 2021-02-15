@@ -1,5 +1,14 @@
 import _extends from "@babel/runtime/helpers/esm/extends";
 import _slicedToArray from "@babel/runtime/helpers/esm/slicedToArray";
+
+/*
+ * @Author: your name
+ * @Date: 2021-02-03 00:39:26
+ * @LastEditTime: 2021-02-15 17:28:14
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /chicken-design/components/Menu/subMenu.tsx
+ */
 import React, { useContext, useState } from 'react';
 import classNames from 'classnames';
 import { MenuContext } from './menu';
@@ -64,14 +73,14 @@ var SubMenu = function SubMenu(_ref) {
         return /*#__PURE__*/React.cloneElement(childElement, {
           index: "".concat(index, "-").concat(i)
         });
-      } else {
-        console.error("Warning: SubMenu has a child which is not a MenuItem component");
       }
+
+      console.error('Warning: SubMenu has a child which is not a MenuItem component');
     });
     return /*#__PURE__*/React.createElement(Transition, {
       in: menuOpen,
       timeout: 300,
-      animation: "zoom-in-top"
+      animation: "zoom-in-bottom"
     }, /*#__PURE__*/React.createElement("ul", {
       className: subMenuClasses
     }, childrenComponent));

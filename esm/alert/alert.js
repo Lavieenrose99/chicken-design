@@ -6,7 +6,7 @@ import _objectWithoutProperties from "@babel/runtime/helpers/esm/objectWithoutPr
 /*
  * @Author: your name
  * @Date: 2020-06-15 10:39:04
- * @LastEditTime: 2021-01-31 23:25:19
+ * @LastEditTime: 2021-02-15 17:43:55
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/alert/alert.tsx
@@ -14,7 +14,7 @@ import _objectWithoutProperties from "@babel/runtime/helpers/esm/objectWithoutPr
 import React, { useState } from 'react';
 import t from 'prop-types';
 import classNames from 'classnames';
-import { IconFont } from '../src/iconfont';
+import Icon from '../Icon';
 var prefixCls = 'chicken-design-alert';
 export var AlertClassName = {
   title: "".concat(prefixCls, "-title")
@@ -47,8 +47,10 @@ var Alert = function Alert(_ref) {
     onClick: function onClick() {
       return setClose(true);
     }
-  }, /*#__PURE__*/React.createElement(IconFont, {
-    type: "icon-close"
+  }, /*#__PURE__*/React.createElement(Icon, {
+    icon: "window-close",
+    className: "close-icons",
+    size: "sm"
   }))), children) : /*#__PURE__*/React.createElement("div", _extends({
     className: classes
   }, rest), /*#__PURE__*/React.createElement("span", {

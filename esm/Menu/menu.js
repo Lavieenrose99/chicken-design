@@ -39,7 +39,7 @@ export var Menu = function Menu(props) {
   };
 
   var passedContext = {
-    index: currentActive ? currentActive : '0',
+    index: currentActive || '0',
     onSelect: handleClick,
     mode: mode,
     defaultOpenSubMenus: defaultOpenSubMenus
@@ -54,9 +54,9 @@ export var Menu = function Menu(props) {
         return /*#__PURE__*/React.cloneElement(childElement, {
           index: index.toString()
         });
-      } else {
-        console.error("Warning: Menu has a child which is not a MenuItem component");
       }
+
+      console.error('Warning: Menu has a child which is not a MenuItem component');
     });
   };
 
