@@ -106,7 +106,7 @@ function copyScss() {
 function scss2css() {
   return gulp
     .src(paths.style)
-    .pipe(scss()) // 处理less文件
+    .pipe(scss()) // 处理scss文件
     .pipe(autoprefixer()) // 根据browserslistrc增加前缀
     .pipe(cssnano({ zindex: false, reduceIdents: false })) // 压缩
     .pipe(gulp.dest(paths.dest.lib))

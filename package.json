@@ -102,8 +102,8 @@
       "jest --bail --findRelatedTests",
       "git add"
     ],
-    "components/**/*.less": [
-      "stylelint --syntax less --fix",
+    "components/**/*.scss": [
+      "stylelint --syntax scss --fix",
       "git add"
     ]
   },
