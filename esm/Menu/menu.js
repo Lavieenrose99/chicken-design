@@ -1,16 +1,18 @@
 import _slicedToArray from "@babel/runtime/helpers/esm/slicedToArray";
+
+/*
+ * @Author: your name
+ * @Date: 2021-02-03 00:39:26
+ * @LastEditTime: 2021-02-18 16:54:15
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /chicken-design/components/Menu/menu.tsx
+ */
 import React, { useState, createContext } from 'react';
 import classNames from 'classnames';
 export var MenuContext = /*#__PURE__*/createContext({
   index: '0'
 });
-/**
- * 为网站提供导航功能的菜单。支持横向纵向两种模式，支持下拉菜单。
- * ~~~js
- * import { Menu } from 'chicken-designship'
- * ~~~
- */
-
 export var Menu = function Menu(props) {
   var className = props.className,
       mode = props.mode,
@@ -55,8 +57,6 @@ export var Menu = function Menu(props) {
           index: index.toString()
         });
       }
-
-      console.error('Warning: Menu has a child which is not a MenuItem component');
     });
   };
 

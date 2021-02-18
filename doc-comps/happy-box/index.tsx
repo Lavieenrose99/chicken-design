@@ -28,7 +28,7 @@ interface Props {
   desc?: React.ReactNode;
 }
 
-export const HappyBox: React.FC<Props> = ({ code, title, desc, children }) => {
+export const ShowTools: React.FC<Props> = ({ code, title, desc, children }) => {
   const [isEditVisible, toggleEditVisible] = useToggle(false);
 
   return (
@@ -78,4 +78,4 @@ export const HappyBox: React.FC<Props> = ({ code, title, desc, children }) => {
   }
 };
 
-export default HappyBox;
+export default ShowTools;

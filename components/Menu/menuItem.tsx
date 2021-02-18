@@ -1,6 +1,14 @@
-import React, { useContext } from 'react'
-import classNames from 'classnames'
-import { MenuContext } from './menu'
+/*
+ * @Author: your name
+ * @Date: 2021-02-03 00:39:26
+ * @LastEditTime: 2021-02-18 11:30:13
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /chicken-design/components/Menu/menuItem.tsx
+ */
+import React, { useContext } from 'react';
+import classNames from 'classnames';
+import { MenuContext } from './menu';
 
 export interface MenuItemProps {
   index?: string;
@@ -10,23 +18,23 @@ export interface MenuItemProps {
 }
 
 const MenuItem: React.FC<MenuItemProps> = props => {
-  const { index, disabled, className, style, children } = props
-  const context = useContext(MenuContext)
+  const { index, disabled, className, style, children } = props;
+  const context = useContext(MenuContext);
   const classes = classNames('menu-item', className, {
     'is-disabled': disabled,
     'is-active': context.index === index,
-  })
+  });
   const handleClick = () => {
-    if (context.onSelect && !disabled && (typeof index === 'string')) {
-      context.onSelect(index)
+    if (context.onSelect && !disabled && typeof index === 'string') {
+      context.onSelect(index);
     }
-  }
+  };
   return (
     <li className={classes} style={style} onClick={handleClick}>
       {children}
     </li>
-  )
-}
+  );
+};
 
-MenuItem.displayName = 'MenuItem'
-export default MenuItem
+MenuItem.displayName = 'MenuItem';
+export default MenuItem;

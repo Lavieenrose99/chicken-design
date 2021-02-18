@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "chicken-design": ["components/index.ts"],
+      "chicken-design": ["components/index.d.ts"],
       "chicken-design/esm/*": ["components/*"],
       "chicken-design/lib/*": ["components/*"]
     },
@@ -14,7 +14,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "outDir": "lib", // 打包输出位置
-    "module": "esnext", // 设置生成代码的模块标准，可以设置为 CommonJS、AMD 和 UMD 等等。
+    "module": "ESNext", // 设置生成代码的模块标准，可以设置为 CommonJS、AMD 和 UMD 等等。
     "target": "es5", // 目标语言的版本
     "declaration": true, // 生成声明文件，记得 inde.d.ts
     "jsx": "react", // 等效 React.createElement调用

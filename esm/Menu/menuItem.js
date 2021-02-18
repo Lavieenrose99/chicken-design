@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-02-03 00:39:26
+ * @LastEditTime: 2021-02-18 11:30:13
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /chicken-design/components/Menu/menuItem.tsx
+ */
 import React, { useContext } from 'react';
 import classNames from 'classnames';
 import { MenuContext } from './menu';
