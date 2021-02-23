@@ -6,13 +6,13 @@
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Input/input.tsx
  */
-import React, { FC, ReactElement, InputHTMLAttributes, ChangeEvent } from 'react'
-import classNames from 'classnames'
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
-import Icon from '../Icon/icon'
+import React, { FC, ReactElement, InputHTMLAttributes, ChangeEvent } from 'react';
+import classNames from 'classnames';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import Icon from '../Icon/icon';
 
-type InputSize = 'lg' | 'sm'
-export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size' > {
+type InputSize = 'lg' | 'sm';
+export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size'> {
   /** 是否禁用 Input */
   disabled?: boolean;
   /** 设置 input 大小，支持 lg 或者是 sm */
@@ -23,7 +23,7 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
   perfix?: string | ReactElement;
   /** 添加后缀 用于配置一些固定组合 */
   append?: string | ReactElement;
-  onChange? : (e: ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 /**
@@ -36,44 +36,36 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size
  * 支持 HTMLInput 的所有基本属性
  */
 export const Input: FC<InputProps> = props => {
-  const {
-    disabled,
-    size,
-    icon,
-    perfix,
-    append,
-    style,
-    ...restProps
-  } = props
+  const { disabled, size, icon, perfix, append, style, ...restProps } = props;
   const cnames = classNames('chicken-design-input-wrapper', {
     [`input-size-${size}`]: size,
     'is-disabled': disabled,
     'input-group': perfix || append,
     'input-group-append': !!append,
     'input-group-perfix': !!perfix,
-  })
+  });
   const fixControlledValue = (value: any) => {
     if (typeof value === 'undefined' || value === null) {
-      return ''
+      return '';
     }
-    return value
-  }
+    return value;
+  };
   if ('value' in props) {
-    delete restProps.defaultValue
-    restProps.value = fixControlledValue(props.value)
+    delete restProps.defaultValue;
+    restProps.value = fixControlledValue(props.value);
   }
   return (
     <div className={cnames} style={style}>
       {perfix && <div className="chicken-design-input-group-perfix">{perfix}</div>}
-      {icon && <div className="icon-wrapper"><Icon icon={icon} title={`title-${icon}`}/></div>}
-      <input
-        className="chicken-design-input-inner"
-        disabled={disabled}
-        {...restProps}
-      />
+      {icon && (
+        <div className="icon-wrapper">
+          <Icon icon={icon} title={`title-${icon}`} />
+        </div>
+      )}
+      <input className="chicken-design-input-inner" disabled={disabled} {...restProps} />
       {append && <div className="chicken-design-input-group-append">{append}</div>}
     </div>
-  )
-}
+  );
+};
 
 export default Input;

@@ -9,46 +9,24 @@
 import React from 'react';
 import Icon from 'chicken-design/lib/Icon';
 import Button from 'chicken-design/lib/Button';
-import 'chicken-design/lib/Icon/styles/index'
+import 'chicken-design/lib/Icon/styles/index';
 
-export default ()=><>
-<div
-  style={{
-    padding: '20px 40px',
-    width: '500px'
-  }}
->
-  <h4>
-    组件演示
-  </h4>
-  <React.Fragment key=".1">
-    <Icon
-      style={{margin: 10}}
-      icon="check"
-      size="2x"
-    />
-    <Icon
-    style={{margin: 10}}
-      icon="times"
-      size="2x"
-    />
-    <Icon
-    style={{margin: 10}}
-      icon="adjust"
-      size="2x"
-    />
-    <Icon
-       style={{margin: 10}}
-      icon="anchor"
-      size="2x"
-    />
-    <Icon
-    style={{margin: 10}}
-      icon="trash"
-      size="2x"
-      spin
-      theme="danger"
-    />
-  </React.Fragment>
-</div>
-</>
+export default () => (
+  <>
+    <div
+      style={{
+        padding: '20px 40px',
+        width: '500px',
+      }}
+    >
+      <h4>组件演示</h4>
+      <React.Fragment key=".1">
+        <Icon style={{ margin: 10 }} icon="check" size="2x" />
+        <Icon style={{ margin: 10 }} icon="times" size="2x" />
+        <Icon style={{ margin: 10 }} icon="adjust" size="2x" />
+        <Icon style={{ margin: 10 }} icon="anchor" size="2x" />
+        <Icon style={{ margin: 10 }} icon="trash" size="2x" spin theme="danger" />
+      </React.Fragment>
+    </div>
+  </>
+);

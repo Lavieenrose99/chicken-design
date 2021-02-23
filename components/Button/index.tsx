@@ -6,6 +6,6 @@
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Button/index.tsx
  */
-import Button from './button'
+import Button from './button';
 
-export default Button
+export default Button;
