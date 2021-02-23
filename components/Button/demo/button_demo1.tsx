@@ -1,11 +1,12 @@
 /*
  * @Author: your name
- * @Date: 2021-01-28 17:42:39
- * @LastEditTime: 2021-02-16 00:01:00
- * @LastEditors: Please set LastEditors
+ * @Date: 2021-02-23 22:03:31
+ * @LastEditTime: 2021-02-23 22:05:36
+ * @LastEditors: your name
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Button/demo/button_demo1.tsx
  */
+
 import React from 'react';
 import Button from 'chicken-design/lib/Button';
 import 'chicken-design/lib/Button/styles/index'

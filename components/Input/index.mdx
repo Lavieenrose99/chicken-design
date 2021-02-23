@@ -1,0 +1,32 @@
+---
+name: Input 输入框
+route: /docs/input
+menu: 组件
+---
+
+import { ShowTools } from '../../doc-comps';
+import BasicDemo from './demo/input_demo1';
+import BasicDemoCode from '!raw-loader!./demo/input_demo1';
+
+
+## Input 按钮
+
+通过键盘获取用户输入，基本的表单项
+
+### 代码演示
+
+#### 基本用法
+
+<ShowTools code={BasicDemoCode} title="基本用法">
+  <BasicDemo />
+</ShowTools>
+
+### API
+
+| 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | -------------------------------------------- | ------ |
+| className | 组件类名 |   string   |   - |
+| size  | 大小 | 'sm' 'lg' | - | 
+| disabled | 是否禁用 |boolean | false |
+| prefix | 前缀 | srting | ReactNode | - |   
+| append | 后缀 | srting | ReactNode | - |  

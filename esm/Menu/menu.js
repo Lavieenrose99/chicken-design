@@ -3,7 +3,7 @@ import _slicedToArray from "@babel/runtime/helpers/esm/slicedToArray";
 /*
  * @Author: your name
  * @Date: 2021-02-03 00:39:26
- * @LastEditTime: 2021-02-18 16:54:15
+ * @LastEditTime: 2021-02-18 22:00:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Menu/menu.tsx
@@ -57,6 +57,8 @@ export var Menu = function Menu(props) {
           index: index.toString()
         });
       }
+
+      return console.error('something was wrong');
     });
   };
 

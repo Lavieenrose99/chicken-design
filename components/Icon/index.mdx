@@ -1,0 +1,35 @@
+---
+name: Icon 图标
+route: /docs/icon
+menu: 组件
+---
+
+import { ShowTools } from '../../doc-comps';
+import BasicDemo from './demo/icon_demo1';
+import BasicDemoCode from '!raw-loader!./demo/icon_demo1';
+
+
+## 图标 
+
+用于点缀页面和组件
+本组件主要封装了react-fontawesome，支持其中所有图标以及状态,详细可以参考官网
+
+[FortAwesome](https://github.com/FortAwesome/react-fontawesome)
+
+### 代码演示
+
+#### 基本用法
+
+<ShowTools code={BasicDemoCode} title="基本用法">
+  <BasicDemo />
+</ShowTools>
+
+### API
+
+| 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | -------------------------------------------- | ------ |
+| btnType | 按钮类型 | 'info'/'positive'/'negative'/'warning'非必填 | 'info' |
+| className | 组件类名 |   string   |   - |
+| size  | 大小 | 'sm' 'lg' | - | 
+| disabled | 是否禁用 |boolean | false |
+| href | 链接 | srting | - |   
