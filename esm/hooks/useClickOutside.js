@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 function useClickOutside(ref, handler) {
   useEffect(function () {

@@ -1,19 +1,19 @@
 @import "../../styles/index";
 .chicken-design-input-wrapper {
+  position: relative;
   display: flex;
   width: 100%;
   margin-bottom: 30px;
-  position: relative;
   .icon-wrapper {
     position: absolute;
-    height: 100%;
-    width: 35px;
-    justify-content: center;
-    color: $input-color;
-    right: 0;
     top: 0;
+    right: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 100%;
+    color: $input-color;
     svg {
       color: $input-placeholder-color;
     }
@@ -25,18 +25,17 @@
 .chicken-design-input-inner {
   width: 100%;
   padding: $input-padding-y $input-padding-x;
-  font-family: $input-font-family;
-  font-size: $input-font-size;
-  font-weight: $input-font-weight;
-  line-height: $input-line-height;
   color: $input-color;
+  font-weight: $input-font-weight;
+  font-size: $input-font-size;
+  font-family: $input-font-family;
+  line-height: $input-line-height;
   background-color: $input-bg;
   background-clip: padding-box;
   border: $input-border-width solid $input-border-color;
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
   border-radius: $input-border-radius;
-
   box-shadow: $input-box-shadow;
   transition: $input-transition;
 
@@ -65,14 +64,14 @@
 .chicken-design-input-group-append {
   display: flex;
   align-items: center;
-  padding: $input-padding-y $input-padding-x;
   margin-bottom: 0; // Allow use of <label> elements by overriding our default margin-bottom
-  font-size: $input-font-size; // Match inputs
-  font-weight: $font-weight-normal;
-  line-height: $input-line-height;
+  padding: $input-padding-y $input-padding-x;
   color: $input-group-addon-color;
-  text-align: center;
+  font-weight: $font-weight-normal;
+  font-size: $input-font-size; // Match inputs
+  line-height: $input-line-height;
   white-space: nowrap;
+  text-align: center;
   background-color: $input-group-addon-bg;
   border: $input-border-width solid $input-group-addon-border-color;
   border-radius: $input-border-radius;
