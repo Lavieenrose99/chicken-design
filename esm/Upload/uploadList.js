@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2021-02-25 11:50:32
- * @LastEditTime: 2021-02-25 11:52:33
- * @LastEditors: your name
+ * @LastEditTime: 2021-02-25 14:13:29
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Upload/uploadList.tsx
  */

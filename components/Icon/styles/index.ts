@@ -1,9 +1,9 @@
 /*
  * @Author: your name
- * @Date: 2021-02-23 22:13:23
- * @LastEditTime: 2021-02-25 12:29:09
+ * @Date: 2021-02-25 20:31:04
+ * @LastEditTime: 2021-02-25 20:31:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Icon/styles/index.ts
  */
-import './index.scss';
+import './index.scss'

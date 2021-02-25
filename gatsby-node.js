@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-15 10:39:04
- * @LastEditTime: 2021-02-18 20:23:19
+ * @LastEditTime: 2021-02-25 20:23:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/gatsby-node.js
@@ -18,5 +18,6 @@ exports.onCreateWebpackConfig = args => {
         'chicken-design': path.resolve(__dirname, '../components/'),
       },
     },
-  });
-};
+}
+  )
+}
