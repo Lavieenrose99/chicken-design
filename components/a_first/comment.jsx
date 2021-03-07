@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 13:33:02
- * @LastEditTime: 2021-03-07 18:59:25
+ * @LastEditTime: 2021-03-07 19:56:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Input/comment.tsx
@@ -51,9 +51,11 @@ const Comment = () => {
            })
 }
         }>评论</Button>
-        {!commentList.length ?
+        {commentList.length < 100 ?
         <div style={{ textAlign: 'center' }}>
-        <h2>加载中。。。</h2>
+        <h2 className="loading-h2-of-commnet">加载中<i className="first-waiting-icon">。</i>
+        <i className="first-waiting-icon">。</i>
+        <i className="first-waiting-icon">。</i></h2>
         </div> :
         <ol>{
 
