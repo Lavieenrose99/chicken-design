@@ -1998,7 +1998,7 @@ __webpack_require__.r(__webpack_exports__);
 /*
  * @Author: your name
  * @Date: 2021-03-07 13:33:02
- * @LastEditTime: 2021-03-07 14:19:53
+ * @LastEditTime: 2021-03-07 14:32:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Input/comment.tsx
@@ -2023,7 +2023,7 @@ var Comment = function Comment() {
       var data = _ref.data;
       setCommentList(data.data);
     });
-  }, []);
+  }, [comment]);
   return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_Input__WEBPACK_IMPORTED_MODULE_2__["default"], {
     style: {
       display: 'inline-block',
@@ -2042,9 +2042,9 @@ var Comment = function Comment() {
         url: 'www.ivannwww.com'
       });
     }
-  }, "\u786E\u8BA4"), commentList.map(function (item) {
-    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("div", null, item.data);
-  }));
+  }, "\u8BC4\u8BBA"), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("ol", null, commentList.map(function (item) {
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("li", null, item.data);
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Comment);
