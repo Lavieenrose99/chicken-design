@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 13:33:02
- * @LastEditTime: 2021-03-07 16:23:00
+ * @LastEditTime: 2021-03-07 18:33:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Input/comment.tsx
@@ -11,6 +11,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Input from '../Input'
 import Button from '../Button'
+import Icon from '../Icon'
 
 
 const Comment = () => {
@@ -33,7 +34,6 @@ const Comment = () => {
         const s = (date.getSeconds() < 10 ? `0${date.getSeconds()}` : date.getSeconds());
         return Y + M + D + h + m + s;
     }
-
     return (
         <>
         <Input
@@ -51,13 +51,17 @@ const Comment = () => {
            })
 }
         }>评论</Button>
+        {!commentList.length ?
+        <div style={{ height: '300px', textAlign: 'center' }}>
+        <Icon icon="spinner" size="4x" spin />
+        </div> :
         <ol>{
 
             commentList.map(item => (
             <div><li>{item.data}<span style={{ float: 'right' }}>
                 {timetrans(item.time)}</span></li></div>
                 ))
-        }</ol>
+        }</ol>}
         </>
     )
 }
