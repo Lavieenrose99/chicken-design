@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 13:33:02
- * @LastEditTime: 2021-03-07 18:33:37
+ * @LastEditTime: 2021-03-07 18:52:10
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Input/comment.tsx
@@ -52,7 +52,7 @@ const Comment = () => {
 }
         }>评论</Button>
         {!commentList.length ?
-        <div style={{ height: '300px', textAlign: 'center' }}>
+        <div style={{ textAlign: 'center' }}>
         <Icon icon="spinner" size="4x" spin />
         </div> :
         <ol>{
