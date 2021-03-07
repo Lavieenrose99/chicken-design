@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 13:33:02
- * @LastEditTime: 2021-03-07 15:04:58
+ * @LastEditTime: 2021-03-07 16:23:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Input/comment.tsx
@@ -18,7 +18,7 @@ const Comment = () => {
        const [commentList, setCommentList] = useState([])
        const [update, setUpdata] = useState(false)
        useEffect(() => {
-        axios.get('http://10.19.65.200:7004/list').then(({ data }) => {
+        axios.get(' http://18e8b5254618.ngrok.io/list').then(({ data }) => {
              setCommentList(data.data)
         })
     }, [update])
@@ -44,7 +44,7 @@ const Comment = () => {
         style={{ marginLeft: '30px' }}
         onClick={
             () => {
-           axios.post('http://10.19.65.200:7004/home',
+           axios.post(' http://18e8b5254618.ngrok.io/home',
             { data: comment, time: Date.now() }).then(() => {
                setUpdata(!update)
                setComment('')
