@@ -114,6 +114,30 @@
       opacity: 1
     }
   }
+.comment-list-chicken{
+  text-align:center
+}
+.comment-list-chicken-item-contianer{
+  display:flex
+}
+.comment-list-chicken-item{
+   display: flex;
+   justify-content: space-between;
+}
+.avator-comment{
+  height:50px;
+  width: 50px;
+  margin-right: 10px;
+}
+.comment-list-chicken-item-content{
+  align-self: flex-start
+}
+.title-flex {
+    margin: 5px;
+    height: 2px;
+    background-color: gray;
+    opacity: 0.5
+}
 
 
   

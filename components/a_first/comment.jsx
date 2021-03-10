@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 13:33:02
- * @LastEditTime: 2021-03-07 20:06:00
+ * @LastEditTime: 2021-03-10 11:21:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Input/comment.tsx
@@ -52,7 +52,8 @@ const Comment = () => {
 }
         }>评论</Button>
         {!commentList.length ?
-        <div style={{ textAlign: 'center' }}>
+        <div
+        className="comment-list-chicken" >
         <h2 className="loading-h2-of-commnet">加载中<i className="first-waiting-icon">。</i>
         <i className="first-waiting-icon">。</i>
         <i className="first-waiting-icon">。</i></h2>
@@ -60,8 +61,13 @@ const Comment = () => {
         <ol>{
 
             commentList.map(item => (
-            <div><li>{item.data}<span style={{ float: 'right' }}>
-                {timetrans(item.time)}</span></li></div>
+                <>
+           <div className="comment-list-chicken-item" >
+               <div className="comment-list-chicken-item-contianer">
+               <img className="avator-comment" alt="头像" src="https://cdn.jsdelivr.net/gh/Lavieenrose99/IvanPictureHouse/ivan-pic默认头像.png
+" ></img><p className="comment-list-chicken-item-content">{item.data}</p></div><div >
+{timetrans(item.time)}</div></div><div className="title-flex"></div>
+                </>
                 ))
         }</ol>}
         </>
