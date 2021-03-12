@@ -19,7 +19,7 @@ const Comment = () => {
        const [commentList, setCommentList] = useState([])
        const [update, setUpdata] = useState(false)
        useEffect(() => {
-        axios.get(' http://18e8b5254618.ngrok.io/list').then(({ data }) => {
+        axios.get(' http://d2cae647202e.ngrok.io/list').then(({ data }) => {
              setCommentList(data.data)
         })
     }, [update])
