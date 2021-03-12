@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-03-07 13:33:02
- * @LastEditTime: 2021-03-10 11:21:20
+ * @LastEditTime: 2021-03-12 20:18:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/components/Input/comment.tsx
@@ -44,7 +44,7 @@ const Comment = () => {
         style={{ marginLeft: '30px' }}
         onClick={
             () => {
-           axios.post(' http://18e8b5254618.ngrok.io/home',
+           axios.post('http://d2cae647202e.ngrok.io/home',
             { data: comment, time: Date.now() }).then(() => {
                setUpdata(!update)
                setComment('')
