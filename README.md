@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-15 10:39:04
- * @LastEditTime: 2021-03-20 22:25:47
+ * @LastEditTime: 2021-03-20 22:27:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /chicken-design/README.md
@@ -30,7 +30,7 @@ npm i chicken-design && cnpm i chicken-design
 
 #### 之后的展望
 
-根据面试的时候大佬给出的建议，大概打算从两个反面优化
+根据面试的时候大佬给出的建议，大概打算从两个方面优化
  - 本身组件库的优化，继续增加新功能，以及优化细节
  - 基于Web Component做兼容性的物料平台
 
